@@ -484,3 +484,10 @@ img {
     width: 450px;
   }
 }
+
+.leetcode-icon {
+  width: 21px;  /* Adjust the size */
+  height: 21px;
+  vertical-align: middle;
+  margin-top: 3px;  /* Fine-tuning for alignment */
+}
