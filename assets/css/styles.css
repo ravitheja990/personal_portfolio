@@ -491,3 +491,7 @@ img {
   vertical-align: middle;
   margin-top: 3px;  /* Fine-tuning for alignment */
 }
+
+.contact__text {
+  text-align: center;
+}

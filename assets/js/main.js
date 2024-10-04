@@ -55,3 +55,28 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    // Collect form data
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Send the email using EmailJS
+    emailjs.send("service_rutx54d", "template_6wo8zpn", {
+        from_name: name,
+        from_email: email,
+        message: message
+    })
+    .then(function(response) {
+        alert("Message sent successfully!");
+        // Reset form fields after successful submission
+        document.getElementById("contactForm").reset();
+    }, function(error) {
+        alert("Failed to send the message. Please try again later.");
+        console.error("Failed...", error);
+    });
+});
+
