@@ -80,5 +80,69 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const workItems = document.querySelectorAll('.work__img');
+    const contentArea = document.getElementById('content-area');
+    let currentSection = ''; // Track the currently loaded section
+
+    workItems.forEach(item => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const section = item.getAttribute('data-section');
+
+            if (currentSection === section) {
+                // If the same section is clicked again, hide the content
+                toggleContent(false);
+                currentSection = ''; // Reset the current section
+            } else {
+                // If a different section is clicked, load new content
+                loadContent(section);
+                currentSection = section; // Set the new current section
+            }
+        });
+    });
+
+    function loadContent(section) {
+        let content = '';
+
+        switch (section) {
+            case 'work-experience':
+                content = '<h3>Work Experience</h3><p>Details about my work experience...</p>';
+                break;
+            case 'projects':
+                content = '<h3>Projects</h3><p>Details about my projects...</p>';
+                break;
+            case 'blogs':
+                content = '<h3>Blogs</h3><p>Links to my latest blogs...</p>';
+                break;
+            case 'research':
+                content = '<h3>Research</h3><p>Information about my research...</p>';
+                break;
+            case 'education':
+                content = '<h3>Education</h3><p>Details about my education...</p>';
+                break;
+            case 'certifications':
+                content = '<h3>Certifications</h3><p>My certifications and credentials...</p>';
+                break;
+            default:
+                content = '<p>Select a section to view details.</p>';
+        }
+
+        // Update content area
+        contentArea.innerHTML = content;
+
+        // Add active class for smooth transition
+        toggleContent(true);
+    }
+
+    function toggleContent(show) {
+        if (show) {
+            contentArea.classList.add('active');
+        } else {
+            contentArea.classList.remove('active');
+            contentArea.innerHTML = ''; // Clear content
+        }
+    }
+});
 
 
