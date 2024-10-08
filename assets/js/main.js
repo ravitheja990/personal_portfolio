@@ -107,14 +107,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
         switch (section) {
             case 'work-experience':
-                content = '<h3>Work Experience</h3><p>Details about my work experience...</p>';
-                break;
+                    content = `
+                        <h3>Work Experience</h3>
+                        <p style="text-align: left;">
+                            <strong>Oracle:</strong><br>
+                            In my capacity at Oracle, I assumed ownership of the Backend Systems for large-scale Ad-Tech Products within Oracle Advertising, focusing particularly on Analytics. My contributions encompassed extensive work with Python, JavaScript, Go-Lang, Docker, Kubernetes, AWS, OCI, and PostgreSQL. This experience allowed me to actively engage in the development and optimization of robust backend systems for Oracle's Advertising Analytics platform.
+                        </p>
+                        <br>
+                        <p style="text-align: left;">
+                            <strong>Phenom:</strong><br>
+                            During my tenure at Phenom, I took ownership of critical components within the Candidate Profile Microservice, including user life cycle management, candidate location service, and the creation and enhancement of candidate profile merging/recreation logic. My responsibilities involved extensive work with Java, Microservices, Storm, Kafka, ELK, and MongoDB. This experience enriched my proficiency in these technologies and deepened my understanding of microservices architecture.
+                        </p>
+                        <br>
+                        <p style="text-align: left;">
+                            <strong>Vassar Labs:</strong><br>
+                            In my role at Vassar Labs, I owned the APWRIMS project and led a team of 5 developers for over 5 months during my 2.10-year tenure. I handled full-stack development, from UI to API, core backend logic, and deployment. My work spanned HTML, CSS, Java, Angular, MySQL, Cassandra, Storm, and Kafka, providing me with invaluable experience and skill growth.
+                        </p>`;
+                    break;
+
+
             case 'projects':
                 content = '<h3>Projects</h3><p>Details about my projects...</p>';
                 break;
-            case 'blogs':
-                content = '<h3>Blogs</h3><p>Links to my latest blogs...</p>';
-                break;
+            // case 'blogs':
+            //     content = '<h3>Blogs</h3><p>Links to my latest blogs...</p>';
+            //     break;
             case 'research':
                 content = '<h3>Research</h3><p>Information about my research...</p>';
                 break;
