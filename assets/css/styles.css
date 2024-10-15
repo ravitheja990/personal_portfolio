@@ -633,4 +633,81 @@ img {
   background-color: #45a049;
 }
 
+/* Experience Section */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
 
+/* Experience Card */
+.experience-item {
+  width: 90%;
+  max-width: 800px;
+  background: linear-gradient(145deg, #d4d7dd, #f0f3f9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  text-align: left;
+  border: 2px solid transparent;
+}
+
+/* Hover Effect for Experience Cards */
+.experience-item:hover {
+  transform: scale(1.02);
+  background: linear-gradient(145deg, #eef1f5, #d0d4db);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid #3498db;
+}
+
+/* Company and Duration */
+.company-duration {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4a4a4a;
+  display: block;
+  margin-bottom: 2px; /* Reduced from 5px to 2px for tighter spacing */
+}
+
+/* Headings Inside the Cards */
+.experience-item h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2a2e35;
+  margin-bottom: 10px;
+  transition: color 0.4s ease;
+}
+
+/* Brighten Heading on Hover */
+.experience-item:hover h4 {
+  color: #3498db;
+}
+
+/* Experience Content */
+.experience-content {
+  margin-top: 15px;
+  opacity: 0.9;
+  transition: opacity 0.4s ease;
+}
+
+/* Slight Text Brightening on Hover */
+.experience-item:hover .experience-content {
+  opacity: 1;
+}
+
+/* Experience Content Paragraphs */
+.experience-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+  transition: color 0.4s ease;
+}
+
+/* Text Color Enhancement on Hover */
+.experience-item:hover p {
+  color: #2a2e35;
+}

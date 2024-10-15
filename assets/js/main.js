@@ -28,47 +28,71 @@ document.addEventListener('DOMContentLoaded', function () {
                 content = `
                     <h3 class="section-title">Work Experience</h3>
                     <div class="experience-container">
+
                         <div class="experience-item">
                             <h4>Software Engineer (Student Assistant II)</h4>
-                            <span class="company-duration">University of California, Riverside | Jan 2024 - Present</span>
-                            <br>
-                            <ul class="experience-details">
-                                <li>Leading the development of <strong>CupCake</strong>, a full-stack web application for visualizing carbon cycle models using <strong>React</strong> and <strong>Python</strong>.</li>
-                                <li>Building a <strong>Retrieval-Augmented Generation (RAG)</strong>-based chatbot to assist researchers by dynamically retrieving and presenting relevant scientific data.</li>
-                            </ul>
+                            <span class="company-duration">University of California, Riverside</span><br>
+                            <span class="company-duration">Jan 2024 - Present</span>
+                            <div class="experience-content">
+                                <p>At UCR, I am leading the development of <strong>CupCake</strong>, an innovative carbon cycle visualization tool. 
+                                The project combines <strong>React</strong> on the front end and <strong>Python</strong> on the back end to create a seamless experience for 
+                                researchers analyzing complex environmental data. This experience has allowed me to hone my skills in full-stack development 
+                                while contributing to research efforts addressing climate change.</p>
+                                <p>Additionally, I am spearheading the development of a <strong>Retrieval-Augmented Generation (RAG)</strong>-based chatbot model. 
+                                This tool dynamically retrieves relevant scientific content, providing insightful responses in real time to assist researchers 
+                                in their inquiries.</p>
+                            </div>
                         </div>
+
                         <div class="experience-item">
                             <h4>Senior Software Engineer</h4>
-                            <span class="company-duration">Oracle, Hyderabad, India | Jan 2022 - Sep 2023</span>
-                            <br>
-                            <ul class="experience-details">
-                                <li>Led the transition from monolithic architecture to microservices using <strong>Docker, Kubernetes, ArgoCD, AWS</strong>, and <strong>OCI</strong>, boosting efficiency by 70% and reducing vulnerabilities by 50%.</li>
-                                <li>Developed scalable ad-tech solutions, increasing system efficiency by 40%, and implemented a monitoring system with <strong>Prometheus</strong> and <strong>Grafana</strong> that reduced downtime by 30%.</li>
-                                <li>Conceptualized and implemented the <strong>VpaidWrapper</strong> tool, processing over 500 million ad pixels weekly, optimizing ad-tracking across OCI and AWS.</li>
-                            </ul>
+                            <span class="company-duration">Oracle, Hyderabad, India</span><br>
+                            <span class="company-duration">Jan 2022 - Sep 2023</span>
+                            <div class="experience-content">
+                                <p>At Oracle, I owned backend systems for large-scale ad-tech products as part of Oracle Advertising. My focus was on the 
+                                development and optimization of analytics platforms using technologies such as <strong>Python, JavaScript, GoLang, Docker, 
+                                Kubernetes, AWS</strong>, and <strong>OCI</strong>. This work allowed me to engage deeply in backend engineering, improving both 
+                                the performance and scalability of key systems.</p>
+                                <p>I led the migration from monolithic systems to containerized microservices, achieving a <strong>70% improvement in operational 
+                                efficiency</strong> and reducing vulnerabilities by 50%. A key initiative I drove was the creation of the <strong>VpaidWrapper</strong> tool, 
+                                which processed over <strong>500 million ad pixels weekly</strong> across OCI and AWS, streamlining ad-tracking integration.</p>
+                                <p>To further enhance platform reliability, I developed a real-time monitoring solution using <strong>Prometheus</strong> and 
+                                <strong>Grafana</strong>, reducing downtime by 30% and enabling instant notifications through Slack, which improved response time by 70%.</p>
+                            </div>
                         </div>
+
                         <div class="experience-item">
                             <h4>Product Development Engineer II</h4>
-                            <span class="company-duration">Phenom, Hyderabad, India | Feb 2020 - Dec 2021</span>
-                            <br>
-                            <ul class="experience-details">
-                                <li>Designed real-time data pipelines with <strong>Kafka</strong> and <strong>Java</strong>, reducing processing time by 40%.</li>
-                                <li>Implemented a multi-threaded algorithm that improved CRM location accuracy by 60%, impacting over 2 million profiles.</li>
-                                <li>Delivered a Java-MongoDB solution that seamlessly corrected millions of merged candidate profiles, saving developer bandwidth and boosting data integrity by 35%.</li>
-                            </ul>
+                            <span class="company-duration">Phenom, Hyderabad, India</span><br>
+                            <span class="company-duration">Feb 2020 - Dec 2021</span>
+                            <div class="experience-content">
+                                <p>At Phenom, I took ownership of key modules within the candidate profile microservice, which managed user lifecycle events, 
+                                candidate location services, and profile merging logic. This role involved hands-on experience with <strong>Java, Kafka, ELK,</strong> 
+                                and <strong>MongoDB</strong>, along with microservice architecture development.</p>
+                                <p>I built real-time data processing pipelines, reducing processing times by 40%, and implemented a multi-threaded algorithm that 
+                                improved CRM location accuracy by 60% for over 2 million profiles. My efforts increased data integrity by 35% and freed up 90% of 
+                                developer bandwidth by automating the correction of incorrectly merged profiles.</p>
+                            </div>
                         </div>
+
                         <div class="experience-item">
                             <h4>Software Engineer</h4>
-                            <span class="company-duration">Vassar Labs, Hyderabad, India | May 2017 - Feb 2020</span>
-                            <br>
-                            <ul class="experience-details">
-                                <li>Led a team of developers in building APWRIMS, a state-level SCADA system, improving water resource allocation by 20% through real-time data tracking and visualization.</li>
-                                <li>Developed automated reporting tools that reduced report generation time by 90%, saving over 10 hours of manual work per month.</li>
-                                <li>Designed APIs with <strong>Java</strong> and <strong>Play Framework</strong> to unify data from 10+ government sectors, enhancing operational efficiency and transparency.</li>
-                            </ul>
+                            <span class="company-duration">Vassar Labs, Hyderabad, India</span><br>
+                            <span class="company-duration">May 2017 - Feb 2020</span>
+                            <div class="experience-content">
+                                <p>In my role at Vassar Labs, I led the development of large-scale government projects, including the <strong>APWRIMS</strong> project, 
+                                which optimized water resource allocation across Andhra Pradesh. Over my tenure, I worked on all aspects of the stack, from UI with 
+                                <strong>Angular</strong> to backend APIs using <strong>Java</strong> and <strong>Cassandra</strong>.</p>
+                                <p>I spearheaded the creation of a state-level SCADA system that improved real-time water tracking by 20% and developed an 
+                                automated reporting system, saving over 10 hours of manual work each month. Additionally, I designed unified APIs to integrate 
+                                data from 10+ government sectors, enhancing operational efficiency and transparency.</p>
+                            </div>
                         </div>
+
                     </div>`;
                 break;
+
+
 
 
             case 'projects':
