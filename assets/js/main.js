@@ -96,11 +96,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             case 'projects':
-                content = `<h3>Projects</h3><p>Details about my projects...</p>`;
+                content = `<h3>Projects</h3><p>Details about my projects coming soon...</p>`;
                 break;
 
             case 'research':
-                content = `<h3>Research</h3><p>Information about my research...</p>`;
+                content = `<h3>Research</h3><p>Information about my research coming soon...</p>`;
                 break;
 
             case 'education':
