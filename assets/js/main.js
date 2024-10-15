@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="certifications__container">
                         <div class="certification-item">
                             <embed src="assets/files/certificates/AI_Powered_Engineer.pdf" type="application/pdf" width="100%" height="400px" />
-                            <a href="assets/files/certificates/AI_Powered_Engineer.pdf" target="_blank" download class="btn-download">Download Certification</a>
+                            <a href="assets/files/certificates/AI_Powered_Engineer.pdf" target="_blank" download class="btn-download">Download Certificate</a>
                         </div>
                         <div class="certification-item">
                             <embed src="assets/files/certificates/Apache_Storm.pdf" type="application/pdf" width="100%" height="400px" />
