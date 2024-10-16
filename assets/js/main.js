@@ -95,9 +95,96 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-            case 'projects':
-                content = `<h3>Projects</h3><p>Details about my projects coming soon...</p>`;
-                break;
+                case 'projects':
+                    content = `
+                        <h3 class="section-title">Projects</h3>
+                        <div class="project-container">
+
+                            <!-- CupCake Carbon Cycle Model Project -->
+                            <div class="project-item">
+                                <h4>CupCake Carbon Cycle Model</h4>
+                                <span class="project-description">Full-stack web application for visualizing carbon cycles using React and Python.</span><br>
+                                <div class="project-content">
+                                    <p>Developed a full-stack solution to track and visualize the carbon cycle across ecosystems, enabling researchers to understand the impact of carbon emissions on climate change. 
+                                    The project uses <strong>React</strong> on the front-end and <strong>Python</strong> on the back-end for processing and displaying real-time data.</p>
+                                    <p>Tech Stack: <strong>React, Python, Flask, PostgreSQL</strong></p>
+                                    <p><strong>Impact:</strong> Enhanced research productivity by allowing scientists to visualize data trends in real-time, reducing data processing time by 30%.</p>
+                                </div>
+                            </div>
+
+                            <!-- RAG-based Chatbot Model Project -->
+                            <div class="project-item">
+                                <h4>RAG-based Chatbot Model</h4>
+                                <span class="project-description">Retrieval-Augmented Generation (RAG)-based chatbot for scientific research assistance.</span><br>
+                                <div class="project-content">
+                                    <p>Developed a chatbot model using <strong>Retrieval-Augmented Generation (RAG)</strong> to assist researchers by providing real-time responses to inquiries based on scientific papers and datasets. 
+                                    The chatbot integrates with a document retrieval system that surfaces the most relevant information on demand.</p>
+                                    <p>Tech Stack: <strong>Python, TensorFlow, Elasticsearch, FastAPI</strong></p>
+                                    <p><strong>Impact:</strong> Improved research efficiency by reducing the time spent on manual searches through scientific papers, making research 40% faster.</p>
+                                </div>
+                            </div>
+
+                            <!-- VpaidWrapper Tool Project -->
+                            <div class="project-item">
+                                <h4>VpaidWrapper Tool</h4>
+                                <span class="project-description">A tool for tracking and processing over 500 million ad pixels weekly using OCI and AWS.</span><br>
+                                <div class="project-content">
+                                    <p>Created a tool that integrates with ad platforms to track ad data and process over 500 million ad pixels weekly. 
+                                    The tool optimizes ad-tracking, ensuring the accuracy and efficiency of ad campaign monitoring.</p>
+                                    <p>Tech Stack: <strong>Node.js, AWS Lambda, DynamoDB, OCI</strong></p>
+                                    <p><strong>Impact:</strong> Increased ad-tracking accuracy by 30%, reducing the time needed for campaign performance reporting by 50%.</p>
+                                </div>
+                            </div>
+
+                            <!-- APWRIMS SCADA System Project -->
+                            <div class="project-item">
+                                <h4>APWRIMS SCADA System</h4>
+                                <span class="project-description">Real-time water resource management for the state of Andhra Pradesh.</span><br>
+                                <div class="project-content">
+                                    <p>Led the development of a SCADA system for water resource management, helping to improve real-time water tracking and optimize water distribution across the state of Andhra Pradesh.</p>
+                                    <p>Tech Stack: <strong>Angular, Java, Cassandra, Kafka, SCADA</strong></p>
+                                    <p><strong>Impact:</strong> Improved water resource allocation by 20%, reduced manual intervention in the monitoring system by 90%, and saved over 10 hours of manual reporting work each week.</p>
+                                </div>
+                            </div>
+
+                            <!-- Phenom Candidate Profile Microservice Project -->
+                            <div class="project-item">
+                                <h4>Phenom Candidate Profile Microservice</h4>
+                                <span class="project-description">Real-time candidate data processing for Phenom’s HR tech platform.</span><br>
+                                <div class="project-content">
+                                    <p>Developed a multi-threaded microservice for processing candidate data in real-time, improving the accuracy and speed of candidate profile creation, merging, and job recommendation features. The system handles millions of candidate profiles and automates the process of data correction.</p>
+                                    <p>Tech Stack: <strong>Java, MongoDB, Kafka, Microservices</strong></p>
+                                    <p><strong>Impact:</strong> Improved data processing speed by 40%, reduced profile merge errors by 60%, and saved 90% of developer bandwidth by automating manual data correction tasks.</p>
+                                </div>
+                            </div>
+
+                            <!-- Candidate Location Search Enhancement Project -->
+                            <div class="project-item">
+                                <h4>Candidate Location Search Enhancement</h4>
+                                <span class="project-description">Enhancing candidate location-based search in Phenom’s HR platform.</span><br>
+                                <div class="project-content">
+                                    <p>Enhanced the candidate location-based search functionality by creating a priority-based multi-threaded algorithm, improving the accuracy of job recommendations for millions of candidates.</p>
+                                    <p>Tech Stack: <strong>Java, MongoDB, Microservices</strong></p>
+                                    <p><strong>Impact:</strong> Increased job recommendation accuracy by 60%, improving the overall relevance of search results for candidates and boosting user engagement on the platform.</p>
+                                </div>
+                            </div>
+
+                            <!-- Oracle MoatPro Project -->
+                            <div class="project-item">
+                                <h4>Oracle MoatPro</h4>
+                                <span class="project-description">Ad-search engine with enhanced security and performance through Docker and Kubernetes.</span><br>
+                                <div class="project-content">
+                                    <p>Led the containerization and performance optimization of Oracle's MoatPro ad-search engine. 
+                                    The project involved transitioning the platform from a monolithic architecture to microservices, improving system performance and security.</p>
+                                    <p>Tech Stack: <strong>Docker, Kubernetes, ArgoCD, OCI</strong></p>
+                                    <p><strong>Impact:</strong> Improved system performance by 40%, reduced security vulnerabilities by 50%, and streamlined development workflows through containerization and automation with Kubernetes.</p>
+                                </div>
+                            </div>
+
+                        </div>`;
+                    break;
+
+                
 
             case 'research':
                 content = `<h3>Research</h3><p>Information about my research coming soon...</p>`;
