@@ -190,12 +190,34 @@ document.addEventListener('DOMContentLoaded', function () {
                 content = `<h3>Research</h3><p>Information about my research coming soon...</p>`;
                 break;
 
-            case 'education':
-                content = `
-                    <h3>Education</h3>
-                    <p>MS in Computer Science & Engineering - University of California, Riverside</p>
-                    <p>BTech in Computer Science & Engineering - Jawaharlal Nehru Technological University, Hyderabad</p>`;
-                break;
+                case 'education':
+                    content = `
+                        <h3 class="section-title">Education</h3>
+                        <div class="education-container">
+                            <!-- UCR Education -->
+                            <div class="education-item">
+                                <h4>MS in Computer Science & Engineering</h4>
+                                <span class="education-description">University of California, Riverside | 2023-2024</span><br>
+                                <div class="education-content">
+                                    <p>Specialized in Artificial Intelligence, Machine Learning, and Cloud Computing. The program provided hands-on experience with modern AI/ML tools, algorithms, and technologies for cloud-based deployment.</p>
+                                    <p><strong>Relevant Courses:</strong> Deep Learning, Cloud Computing, Distributed Systems, AI for Healthcare.</p>
+                                    <p><strong>Thesis/Project:</strong> Leading the development of a machine learning-based model for oceanic carbon cycle prediction, integrating real-time sensor data.</p>
+                                </div>
+                            </div>
+                
+                            <!-- JNTU Education -->
+                            <div class="education-item">
+                                <h4>BTech in Computer Science & Engineering</h4>
+                                <span class="education-description">Jawaharlal Nehru Technological University, Hyderabad | 2013-2017</span><br>
+                                <div class="education-content">
+                                    <p>Graduated with honors, focusing on software development, data structures, algorithms, and system architecture. Actively participated in multiple software development projects, including full-stack development and database management.</p>
+                                    <p><strong>Relevant Courses:</strong> Data Structures, Operating Systems, Software Engineering, Database Management Systems.</p>
+                                    <p><strong>Final Project:</strong> Developed an intelligent water management system for monitoring and optimizing resource usage across rural regions using IoT and cloud technologies.</p>
+                                </div>
+                            </div>
+                        </div>`;
+                    break;
+                
 
             case 'certifications':
                 content = `
