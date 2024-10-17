@@ -856,3 +856,39 @@ img {
 .education-item:hover p {
   color: #2a2e35;
 }
+
+.recommendations-container {
+  display: grid;
+  grid-template-columns: 1fr; /* One recommendation per line */
+  gap: 40px; /* Increased gap for better spacing */
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.recommendation-item {
+  position: relative;
+  width: 90%; /* Adjust to take a larger portion of the screen */
+  max-width: 800px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.recommendation-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recommendation-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Slightly more dramatic shadow on hover */
+}
+
+.recommendation-item:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}

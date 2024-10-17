@@ -93,9 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
 
 
-
-
-                case 'projects':
+            case 'projects':
                     content = `
                         <h3 class="section-title">Projects</h3>
                         <div class="project-container">
@@ -184,13 +182,12 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>`;
                     break;
 
-                
-
+            
             case 'research':
                 content = `<h3>Research</h3><p>Information about my research coming soon...</p>`;
                 break;
 
-                case 'education':
+            case 'education':
                     content = `
                         <h3 class="section-title">Education</h3>
                         <div class="education-container">
@@ -249,6 +246,27 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                     </div>`;
                 break;
+
+                case 'recommendations':
+                    content = `
+                        <h3 class="section-title">Recommendations</h3>
+                        <div class="recommendations-container">
+                            <!-- Recommendation 1 -->
+                            <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
+                                <img src="assets/img/recommendation1.png" alt="LinkedIn Recommendation 1">
+                            </a>
+
+                            <!-- Recommendation 2 -->
+                            <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
+                                <img src="assets/img/recommendation2.png" alt="LinkedIn Recommendation 2">
+                            </a>
+
+                            <!-- Recommendation 3 -->
+                            <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
+                                <img src="assets/img/recommendation3.png" alt="LinkedIn Recommendation 3">
+                            </a>
+                        </div>`;
+                    break;
 
             default:
                 content = `<p>Select a section to view details.</p>`;
