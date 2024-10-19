@@ -892,3 +892,89 @@ img {
 .recommendation-item:hover img {
   transform: scale(1.05); /* Slight zoom on hover */
 }
+
+/* Skills Section */
+.skills__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+/* Skill Box Styling */
+.skills__box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;  /* Consistent width */
+  height: 150px; /* Consistent height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Keep skill boxes inline */
+.skills__container .skills__box {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skill Box Hover Effect */
+.skills__box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Details Heading: Black by default */
+.skills__details h3 {
+  font-size: 1.5rem;
+  color: #333; /* Black */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Heading turns blue when box is hovered */
+.skills__box:hover h3 {
+  color: #007bff;
+}
+
+/* Skills Description Box Styling */
+.skills-content-area {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #007bff;
+  max-width: 800px;
+  margin: 20px auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Active state of the content area */
+.skills-content-area.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Fix */
+@media screen and (max-width: 768px) {
+  .skills__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__box {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}

@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>`;
                 break;
 
-
             case 'projects':
                     content = `
                         <h3 class="section-title">Projects</h3>
@@ -181,7 +180,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         </div>`;
                     break;
-
             
             case 'research':
                 content = `<h3>Research</h3><p>Information about my research coming soon...</p>`;
@@ -214,8 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             </div>
                         </div>`;
                     break;
-                
-
+            
             case 'certifications':
                 content = `
                     <h3>Certifications</h3>
@@ -247,26 +244,26 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>`;
                 break;
 
-                case 'recommendations':
-                    content = `
-                        <h3 class="section-title">Recommendations</h3>
-                        <div class="recommendations-container">
-                            <!-- Recommendation 1 -->
-                            <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
-                                <img src="assets/img/recommendation1.png" alt="LinkedIn Recommendation 1">
-                            </a>
+            case 'recommendations':
+                content = `
+                    <h3 class="section-title">Recommendations</h3>
+                    <div class="recommendations-container">
+                        <!-- Recommendation 1 -->
+                        <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
+                            <img src="assets/img/recommendation1.png" alt="LinkedIn Recommendation 1">
+                        </a>
 
-                            <!-- Recommendation 2 -->
-                            <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
-                                <img src="assets/img/recommendation2.png" alt="LinkedIn Recommendation 2">
-                            </a>
+                        <!-- Recommendation 2 -->
+                        <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
+                            <img src="assets/img/recommendation2.png" alt="LinkedIn Recommendation 2">
+                        </a>
 
-                            <!-- Recommendation 3 -->
-                            <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
-                                <img src="assets/img/recommendation3.png" alt="LinkedIn Recommendation 3">
-                            </a>
-                        </div>`;
-                    break;
+                        <!-- Recommendation 3 -->
+                        <a href="https://www.linkedin.com/in/travitheja/details/recommendations/" target="_blank" class="recommendation-item">
+                            <img src="assets/img/recommendation3.png" alt="LinkedIn Recommendation 3">
+                        </a>
+                    </div>`;
+                break;
 
             default:
                 content = `<p>Select a section to view details.</p>`;
@@ -285,6 +282,93 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             contentArea.classList.remove('active');
             contentArea.innerHTML = ''; // Clear content
+        }
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const skillBoxes = document.querySelectorAll('.skills__box');
+    const contentArea = document.getElementById('skills-content-area');
+    let currentSkillSection = ''; // Track the currently loaded skill section
+
+    skillBoxes.forEach(box => {
+        box.addEventListener('click', function () {
+            const section = box.getAttribute('data-section');
+
+            if (currentSkillSection === section) {
+                // Collapse the content if the same box is clicked again
+                toggleSkillContent(false);
+                currentSkillSection = ''; // Reset the section
+            } else {
+                // Load the content for the clicked box
+                loadSkillContent(section);
+                currentSkillSection = section; // Update the current section
+            }
+        });
+    });
+
+    function loadSkillContent(section) {
+        let content = '';
+
+        switch (section) {
+            case 'backend':
+                content = `
+                    <div class="skills__details">
+                        <h3>Backend Development</h3>
+                        <p>Java (Spring Boot, Java 8+) - Built scalable microservices and APIs.</p>
+                        <p>Python (FastAPI, Flask) - Developed high-performance backend systems.</p>
+                        <p>Docker, Kubernetes, ArgoCD - Led microservice containerization for scalability.</p>
+                        <p>PostgreSQL, MongoDB, Cassandra - Engineered databases for high throughput.</p>
+                    </div>`;
+                break;
+
+            case 'ai-ml':
+                content = `
+                    <div class="skills__details">
+                        <h3>AI/ML Expertise</h3>
+                        <p>Machine Learning & AI - Developed models using TensorFlow, PyTorch, and Scikit-learn.</p>
+                        <p>NLP & Chatbots - Built RAG-based conversational systems.</p>
+                        <p>Data Pipelines - Designed data processing pipelines using Pandas, NumPy, and Spark.</p>
+                    </div>`;
+                break;
+
+            case 'fullstack':
+                content = `
+                    <div class="skills__details">
+                        <h3>Full Stack & Frontend Development</h3>
+                        <p>ReactJS, JavaScript - Built interactive UIs with efficient state management.</p>
+                        <p>HTML5, CSS3 - Created responsive layouts optimized for multiple devices.</p>
+                        <p>API Integration - Integrated backend APIs with REST and GraphQL.</p>
+                    </div>`;
+                break;
+
+            case 'cloud':
+                content = `
+                    <div class="skills__details">
+                        <h3>Cloud & DevOps</h3>
+                        <p>AWS, GCP, OCI - Architected cloud-native solutions with scalability in mind.</p>
+                        <p>CI/CD Pipelines - Streamlined development with Jenkins and ArgoCD.</p>
+                        <p>Prometheus, Grafana - Integrated monitoring and alerting for operational efficiency.</p>
+                    </div>`;
+                break;
+
+            default:
+                content = `<p>Select a skill to view details.</p>`;
+        }
+
+        // Update the content area with the new content
+        contentArea.innerHTML = content;
+
+        // Show the content with a smooth transition
+        toggleSkillContent(true);
+    }
+
+    function toggleSkillContent(show) {
+        if (show) {
+            contentArea.classList.add('active');
+        } else {
+            contentArea.classList.remove('active');
+            contentArea.innerHTML = ''; // Clear the content
         }
     }
 });

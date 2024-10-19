@@ -129,88 +129,33 @@
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
-
+            
                 <div class="skills__container bd-grid">
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills__text">
-                            I possess a comprehensive skill set spanning backend systems, full stack development, AI/ML modeling, and cloud solutions. My experience in creating scalable architectures, developing intelligent systems, and optimizing performance enables me to deliver impactful, production-ready solutions with a user-centric approach.
-                        </p>
-
-                        <!-- Backend Development -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">Backend Development</h3>
-                            <ul class="skills__list">
-                                <li><i class='bx bx-code-block skills__icon'></i> 
-                                    <strong>Python (FastAPI, Flask)</strong> - Developed scalable REST APIs and microservices with a focus on security, maintainability, and high availability.
-                                </li>
-                                <li><i class='bx bx-server skills__icon'></i> 
-                                    <strong>Node.js, Express</strong> - Built efficient backend systems with real-time data handling and database integrations.
-                                </li>
-                                <li><i class='bx bxl-docker skills__icon'></i> 
-                                    <strong>Docker, Kubernetes</strong> - Experience in containerization and orchestrating services for smooth deployment and scalability.
-                                </li>
-                                <li><i class='bx bx-data skills__icon'></i> 
-                                    <strong>PostgreSQL, MongoDB, Cassandra</strong> - Managed relational and NoSQL databases for robust data handling and optimization.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Cloud & DevOps -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">Cloud & DevOps</h3>
-                            <ul class="skills__list">
-                                <li><i class='bx bxl-google skills__icon'></i> 
-                                    <strong>Google Cloud Platform, AWS</strong> - Architected and deployed cloud-native solutions focusing on performance, scalability, and cost-efficiency.
-                                </li>
-                                <li><i class='bx bx-cog skills__icon'></i> 
-                                    <strong>CI/CD Pipelines (Jenkins, GitHub Actions)</strong> - Implemented automated deployment workflows, enhancing development velocity.
-                                </li>
-                                <li><i class='bx bx-shield skills__icon'></i> 
-                                    <strong>Security & Monitoring</strong> - Integrated logging and monitoring tools with ELK stack and Prometheus/Grafana for proactive system maintenance.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- AI/ML Expertise -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">AI/ML Expertise</h3>
-                            <ul class="skills__list">
-                                <li><i class='bx bx-brain skills__icon'></i> 
-                                    <strong>Machine Learning & Predictive Analytics</strong> - Developed models using TensorFlow, Scikit-learn, and PyTorch.
-                                </li>
-                                <li><i class='bx bx-chat skills__icon'></i> 
-                                    <strong>Chatbots & NLP</strong> - Built conversational AI systems with RAG-based architectures and NLP techniques.
-                                </li>
-                                <li><i class='bx bx-bar-chart skills__icon'></i> 
-                                    <strong>Data Processing & Visualization</strong> - Skilled in data pipelines, preprocessing, and feature engineering with Pandas and NumPy.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Full Stack & Frontend Development -->
-                        <div class="skills__category">
-                            <h3 class="skills__category-title">Full Stack & Frontend Development</h3>
-                            <ul class="skills__list">
-                                <li><i class='bx bxl-javascript skills__icon'></i> 
-                                    <strong>ReactJS, JavaScript</strong> - Built dynamic, interactive web interfaces with a focus on state management and responsiveness.
-                                </li>
-                                <li><i class='bx bxs-devices skills__icon'></i> 
-                                    <strong>HTML5, CSS3</strong> - Developed semantic, accessible layouts optimized for performance across multiple devices.
-                                </li>
-                                <li><i class='bx bx-grid-alt skills__icon'></i> 
-                                    <strong>API Integration</strong> - Seamlessly integrated frontend with backend services using REST and GraphQL.
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- Backend Development Box -->
+                    <div class="skills__box" data-section="backend">
+                        <h3 class="skills__box-title">Backend Development</h3>
                     </div>
-
-                    <!-- Skills Image or Visualization -->
-                    <div>
-                        <img src="assets/img/work3.jpg" alt="Skills Image" class="skills__img">
+            
+                    <!-- AI/ML Expertise Box -->
+                    <div class="skills__box" data-section="ai-ml">
+                        <h3 class="skills__box-title">AI/ML Expertise</h3>
+                    </div>
+            
+                    <!-- Full Stack Development Box -->
+                    <div class="skills__box" data-section="fullstack">
+                        <h3 class="skills__box-title">Full Stack & Frontend Development</h3>
+                    </div>
+            
+                    <!-- Cloud & DevOps Box -->
+                    <div class="skills__box" data-section="cloud">
+                        <h3 class="skills__box-title">Cloud & DevOps</h3>
                     </div>
                 </div>
-            </section>
+            
+                <!-- Content Area for Expanding Boxes -->
+                <div id="skills-content-area" class="skills-content-area"></div>
+            </section>        
+                        
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
